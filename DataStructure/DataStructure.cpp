@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "SeqList.h"
 #include "LinkList.h"
+#include "STACT.h"
 
 using namespace std;
 
@@ -70,4 +71,10 @@ int main(){
     //单链表的第[2]个元素为：200
     //单链表的第[3]个元素为：100
     //单链表的第[4]个元素为：3000*/
+
+    string Postfix = InfixToPostfix("9+(3-1)*3+10/2");
+    cout << Postfix << endl;
+    cout << calculate(Postfix) << endl;
+        /*9  3 1 - 3 * +10 2 / +
+        20*/
 }
